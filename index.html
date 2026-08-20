@@ -102,7 +102,7 @@
       <section class="page" aria-labelledby="title">
         <p class="eyebrow">Fenteles Games</p>
         <h1 id="title">Privacy Policy for Logico</h1>
-        <p class="updated">Last updated: August 18, 2026</p>
+        <p class="updated">Last updated: August 20, 2026</p>
 
         <p>Fenteles Games respects your privacy. This Privacy Policy explains how information is handled when you use Logico, including its demo and release versions (the “Game”).</p>
 
@@ -113,11 +113,13 @@
         <h2>Analytics Data</h2>
         <p>Google Analytics for Firebase may automatically process:</p>
         <ul>
-          <li>an app-instance identifier and, where available and permitted by your device settings, an advertising identifier;</li>
+          <li>an app-instance identifier, a pseudonymous Logico user identifier, and, where available and permitted by your device settings, an advertising identifier;</li>
           <li>app lifecycle, session, screen-view, installation, and first-open information;</li>
           <li>technical information such as device type, operating system, language, app version, and package name;</li>
           <li>an approximate country or region derived from a masked IP address.</li>
         </ul>
+        <p>To distinguish a returning player from a genuinely new installation, Logico creates a pseudonymous user identifier on your device. The Game applies a one-way SHA-256 hash to Android's system identifier together with a Logico-specific namespace before sending the result to Firebase. The raw Android system identifier is not transmitted by Logico. The resulting identifier does not contain your name, email address, contact details, or game solutions.</p>
+        <p>This pseudonymous identifier is used only to reduce duplicate analytics counts and to associate general level events from the same device. On supported Android versions it may remain the same after the Game is uninstalled and installed again on the same device, for the same Android user and app-signing key. It can change after a factory reset, a signing-key change, or changes made by Android.</p>
         <p>The Game also sends events indicating when a level is opened or successfully completed for the first time, and when a player later returns to or completes that level again. These events include only the stable level identifier, such as <strong>level_1</strong>. They do not include the player's name, email address, circuit layout, wires, solution, or other user-created content.</p>
         <p>Fenteles Games uses this information to understand installations and general engagement, identify levels that may need improvement, and improve the Game. The Game does not send analytics events for failed checks or measure the amount of time spent solving a level.</p>
 
@@ -138,7 +140,7 @@
 
         <h2>Data Security, Retention, and Deletion</h2>
         <p>Analytics data is encrypted in transit. User-level and event-level Analytics data is retained for no longer than 14 months under the available Google Analytics retention settings. Aggregated standard reports may remain available for longer.</p>
-        <p>The Game does not maintain user accounts or a database that links analytics events to your name or contact details. You can stop future collection from the Game by uninstalling it. You can also manage or reset your device's advertising identifier through Android settings, where available.</p>
+        <p>The Game does not maintain user accounts or a database that links analytics events to your name or contact details. You can stop future collection from the Game by uninstalling it. Reinstalling the Game may reuse the pseudonymous Logico identifier described above, although no analytics events are sent while the Game is not installed. You can also manage or reset your device's advertising identifier through Android settings, where available.</p>
         <p>For privacy or deletion questions, contact Fenteles Games using the address below. Requests will be handled as required by applicable law and where technically possible.</p>
 
         <h2>Children's Privacy</h2>
