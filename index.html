@@ -102,13 +102,13 @@
       <section class="page" aria-labelledby="title">
         <p class="eyebrow">Fenteles Games</p>
         <h1 id="title">Privacy Policy for Logico</h1>
-        <p class="updated">Last updated: August 20, 2026</p>
+        <p class="updated">Last updated: October 4, 2026</p>
 
         <p>Fenteles Games respects your privacy. This Privacy Policy explains how information is handled when you use Logico, including its demo and release versions (the “Game”).</p>
 
         <h2>Information We Collect</h2>
         <p>The Game does not require an account and does not ask you to provide your name, email address, phone number, contacts, precise location, payment information, or other directly identifying information.</p>
-        <p>The Android version uses Google Analytics for Firebase. As a result, limited technical and usage information is collected automatically and sent to Google for analytics purposes.</p>
+        <p>Android builds distributed through Google Play include Google Analytics for Firebase, which automatically collects limited technical and usage information and sends it to Google for analytics purposes. Test APK builds may omit Firebase Analytics and use Google test advertisements. Older versions may not include advertising.</p>
 
         <h2>Analytics Data</h2>
         <p>Google Analytics for Firebase may automatically process:</p>
@@ -120,27 +120,34 @@
         </ul>
         <p>To distinguish a returning player from a genuinely new installation, Logico creates a pseudonymous user identifier on your device. The Game applies a one-way SHA-256 hash to Android's system identifier together with a Logico-specific namespace before sending the result to Firebase. The raw Android system identifier is not transmitted by Logico. The resulting identifier does not contain your name, email address, contact details, or game solutions.</p>
         <p>This pseudonymous identifier is used only to reduce duplicate analytics counts and to associate general level events from the same device. On supported Android versions it may remain the same after the Game is uninstalled and installed again on the same device, for the same Android user and app-signing key. It can change after a factory reset, a signing-key change, or changes made by Android.</p>
-        <p>The Game also sends events indicating when a level is opened or successfully completed for the first time, and when a player later returns to or completes that level again. These events include only the stable level identifier, such as <strong>level_1</strong>. They do not include the player's name, email address, circuit layout, wires, solution, or other user-created content.</p>
+        <p>The Game sends a player_identity_seen event when its analytics component starts. It also sends events indicating when a level is opened or successfully completed for the first time, and when a player later returns to or completes that level again. These events include only the stable level identifier, such as <strong>level_1</strong>. They do not include the player's name, email address, circuit layout, wires, solution, or other user-created content.</p>
         <p>Fenteles Games uses this information to understand installations and general engagement, identify levels that may need improvement, and improve the Game. The Game does not send analytics events for failed checks or measure the amount of time spent solving a level.</p>
 
-        <h2>Advertising and Crash Reporting</h2>
-        <p>The current version of the Game does not display third-party advertising and does not integrate Firebase Crashlytics or another third-party crash-reporting service.</p>
-        <p>Fenteles Games does not sell analytics data and does not use the Game's custom level events to create directly identifiable user profiles.</p>
+        <h2>Advertising</h2>
+        <p>Ad-enabled Android versions use Google AdMob through the Google Mobile Ads SDK. Full-screen advertisements may appear when you continue after successfully completing campaign level 6 or a later level, at most once every two minutes. Ads are subject to availability and your applicable privacy choices.</p>
+        <p>The advertising SDK automatically collects and shares data with Google for advertising, measurement, and fraud prevention. This may include your IP address (which can indicate approximate location), device identifiers such as the Android advertising ID and app-set ID, app and ad interactions, and diagnostic or performance information. Fenteles Games does not send your saved circuits or solutions as advertising data. See <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosures</a>.</p>
+        <h2>Advertising Privacy Choices</h2>
+        <p>The Game uses Google's User Messaging Platform (UMP) to manage applicable advertising privacy messages. Depending on your region and circumstances, you may see a consent message for the European Economic Area, the United Kingdom, or Switzerland, or a privacy message for supported US states. These messages describe relevant purposes and advertising partners and provide the available consent, refusal, and data-sharing choices.</p>
+        <p>The Game requests advertisements only when UMP indicates that advertising requests are permitted. When UMP requires access to privacy options, the Game provides an advertising privacy option in its settings so you can review or change your choice. Refusing consent does not necessarily remove all advertising: limited or non-personalized advertising may be available depending on the SDK, your choices, and applicable requirements.</p>
+        <p>Advertising privacy choices do not currently control all Firebase Analytics collection. Firebase Analytics is a separate service in Google Play builds; the advertising consent form should not be understood as an on/off switch for all analytics.</p>
+        <h2>Crash Reporting</h2>
+        <p>The Game does not integrate Firebase Crashlytics or another dedicated third-party crash-reporting service. The advertising SDK may nevertheless process diagnostic information as described above.</p>
+        <p>Fenteles Games does not sell its custom level analytics data or use those events to create directly identifiable user profiles. Advertising providers may process or share advertising-related data under their own terms and applicable privacy choices, including choices concerning sale or sharing in supported US states.</p>
 
         <h2>Local Game Data</h2>
         <p>Your game progress, settings, circuits, placed elements, nodes, and wires are stored locally on your device. The content of these saves is not included in the Firebase Analytics events described above.</p>
         <p>Deleting the Game or clearing its local data may permanently remove this locally stored information.</p>
 
         <h2>Third-Party Processing</h2>
-        <p>Analytics data is transmitted to and processed by Google LLC through Google Analytics for Firebase. Google may process data on global infrastructure in accordance with its applicable terms and policies. For more information, see <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+        <p>Analytics and advertising data are transmitted to and processed by Google LLC through Google Analytics for Firebase, AdMob, and UMP, as applicable to your build. Advertising partners identified in the privacy messages may also process data according to your choices and applicable requirements. Google may process data on global infrastructure in accordance with its applicable terms and policies. For more information, see <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
         <p>Google Play may separately process technical information related to downloading, installing, updating, or reviewing the Game under Google's own policies.</p>
 
         <h2>Internet Connection</h2>
-        <p>An internet connection is not required for the Game's core gameplay. When a connection is available, Firebase Analytics may transmit the technical and usage information described in this policy.</p>
+        <p>An internet connection is not required for the Game's core gameplay. When a connection is available, the integrated Google services may retrieve privacy messages and advertisements and transmit the analytics, advertising, and technical information described in this policy.</p>
 
         <h2>Data Security, Retention, and Deletion</h2>
-        <p>Analytics data is encrypted in transit. User-level and event-level Analytics data is retained for no longer than 14 months under the available Google Analytics retention settings. Aggregated standard reports may remain available for longer.</p>
-        <p>The Game does not maintain user accounts or a database that links analytics events to your name or contact details. You can stop future collection from the Game by uninstalling it. Reinstalling the Game may reuse the pseudonymous Logico identifier described above, although no analytics events are sent while the Game is not installed. You can also manage or reset your device's advertising identifier through Android settings, where available.</p>
+        <p>Data sent by the integrated Google analytics and advertising SDKs is encrypted in transit. User-level and event-level Analytics data is retained for no longer than 14 months under the available Google Analytics retention settings. Aggregated standard reports may remain available for longer. Advertising and consent data retention is governed by the relevant Google services and advertising partners; the Analytics retention period is not a retention guarantee for all advertising data.</p>
+        <p>The Game does not maintain user accounts or a database that links analytics events to your name or contact details. You can stop future collection from the Game by uninstalling it. Reinstalling the Game may reuse the pseudonymous Logico identifier described above, although no analytics events are sent while the Game is not installed. You can also reset or delete your device's advertising identifier through Android settings, where available, and use the advertising privacy options described above. Resetting or deleting the advertising identifier does not by itself disable all analytics or all other SDK data collection.</p>
         <p>For privacy or deletion questions, contact Fenteles Games using the address below. Requests will be handled as required by applicable law and where technically possible.</p>
 
         <h2>Children's Privacy</h2>
